@@ -611,7 +611,7 @@ class ContentPage extends Component {
             }
             let amount = form.getFieldValue("Amount");
             try {
-                this.executeMethod("buyTicket", [], new BigNumber(amount).multipliedBy(decimal).toString(16), "FPRS", '', function (res) {
+                this.executeMethod("buyAsnow", [], new BigNumber(amount).multipliedBy(decimal).toString(16), "FPRS", '', function (res) {
                     if (res) {
                         form.resetFields();
                         that.setState({showBuyAsnow: false});
